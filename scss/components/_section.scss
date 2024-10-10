@@ -1,0 +1,87 @@
+section{
+    margin:auto;
+    min-width:500px;
+    min-height:800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    h1{
+        font-size: 42px;
+    }
+    @include card(100%, 100%,15px, #ffffff, center);
+    form{
+        position: relative;
+        button{
+            @extend .button;
+            background: $background-color;
+            
+        }
+        a{
+            text-align:right; 
+            position: absolute;
+            right:10%;
+            bottom:26%;
+            text-decoration: none;
+            color: #000;
+        }
+    } 
+    .username-con{
+        text-align: $textAlignment;
+        margin:auto;
+        width:80%;
+        input{
+        @extend .input;
+        background-repeat: no-repeat;
+        }
+        .input-div{
+            display: inline-block;
+            width: 100%;
+            border-bottom:1px solid grey;
+        }
+    };
+    .password-con{
+        text-align: $textAlignment;
+        margin:auto;
+        width:80%;
+        padding-bottom: 50px;
+        .input-div{
+            display: inline-block;
+            width: 100%;
+            border-bottom:1px solid grey;
+        }
+        input{
+            @extend .input;
+        }
+    };
+    .alternate-signup-con ul{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        padding-inline-start: 0px;
+        list-style: none;
+        font-size: 40px;
+        justify-content: center;
+        margin-bottom: 10%;
+        li{
+            padding-right: 10px;
+        }
+        li:nth-child(1) a{
+            color: rgb(13, 2, 119);
+        }
+        li:nth-child(2) a{
+            color: rgb(0, 145, 255);
+        }
+        li:nth-child(3) a{
+            color: rgba(170, 12, 12, 0.649);
+        }
+    }
+    .regular-signup-con{
+        margin-bottom:20px;
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+
+    }
+
+}

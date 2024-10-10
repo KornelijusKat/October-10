@@ -1,0 +1,16 @@
+nav{
+    background-color: green;
+    padding:5px;
+    ul{
+        display: flex;
+        margin:5px;
+        li{
+            padding: 5px;
+            background-color: $background-color;
+            a{
+                color: #000;
+                @extend.button;
+            }
+        }
+    }
+}
